@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table></table>
+
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="demo"></p>
+  </body>
+</html>
+<script>
+  let sum = 1;
+  function myFunction() {
+      let mystring = AnotherFunction(2);
+      document.getElementById("demo").innerHTML = mystring;
+    }
+
+    function AnotherFunction(n) {
+      console.log(sum);
+      if (n == 1) {
+        return sum
+      }
+      else {sum = n + sum;
+        AnotherFunction(n-1);
+      }
+    }
+</script>
